@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1Talent</title>
+    <!-- Favicon-->
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.ico" />
+    <!-- Link to google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap"
+        rel="stylesheet">
+    <!-- Link to Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link to css -->
+    <link rel="stylesheet" href="./assets/css/styles.min.css">
+</head>
+
+<body>
+    <!-- Main-wrapper -->
+    <div id="main-wrapper" class="d-flex h-100 w-100 overflow-hidden position-relative">
+        <input type="checkbox" name="toggler" id="nav-toggler">
+        <input type="checkbox" name="close-nav" id="close-nav">
+        <!-- Side-nav -->
+        <aside id="side-nav" class="d-flex bg-primary flex-column flex-shrink-0 overflow-auto h-100">
+            <div class="nav-header w-100 d-flex align-items-center justify-content-center position-relative">
+                <img src="./assets/images/icons/logo.png" alt="1rivet-logo" class="logo-image img-sm">
+                <img src="./assets/images/icons/white-logo.png" alt="1rivet-logo" class="logo-image img-big">
+               
+                <label for="close-nav"> <span class="close-icon fa fa-times text-white position-absolute  d-md-block d-lg-none"></span></label>
+            </div>
+            <nav class="nav flex-column pt-4">
+                <a class="nav-link navlink active d-flex  py-4 mb-1" href="#">
+                    <div class="nav-link-icon">
+                        <img src="./assets/images/icons/dashboard_home.png" alt="Dashboard">
+                    </div>
+                    <div id="nav-link-title" class="nav-link-title">Dashboard</div>
+                </a>
+                <a class="nav-link navlink d-flex  py-4 mb-1" href="#">
+                    <div class="nav-link-icon">
+                        <img src="./assets/images/icons/help.png" alt="Resignation">
+                    </div>
+                    <div id="nav-link-title" class="nav-link-title">Resignation</div>
+                </a>
+                <a class="nav-link navlink d-flex  py-4 mb-1" href="#">
+                    <div class="nav-link-icon">
+                        <img src="./assets/images/icons/settings.png" alt="Setting">
+                    </div>
+                    <div id="nav-link-title" class="nav-link-title">Setting</div>
+                </a>
+
+            </nav>
+        </aside>
+        <!-- Ends: Side-nav -->
+        <!-- Content-wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column w-100 h-100 px-4 pb-4">
+            <!-- Header -->
+            <header id="header" class="d-flex align-items-center  w-100 ">
+                <label for="nav-toggler" class="toggle-label mb-0"><span class="fa fa-bars fa-lg text-white mr-3"></span></label>
+                <div class="title text-white position-relative">Employee Dashboard</div>
+                <div class="user-info d-flex align-items-center ml-auto">
+                    <div class="position-relative mx-4">
+                        <img src="./assets/images/icons/mail.png" class="mail-icon" alt="Mail icon">
+                        <span class="custom-badge badge badge-secondary rounded-circle position-absolute">6</span>
+                    </div>
+                    <img src="./assets/images/profile-img.jpg" class="user-profile rounded-circle ml-3"
+                        alt="User Profile">
+                    <div class="user-name mx-2 text-white">Hello, Johnathan</div>
+                    <img src="./assets/images/icons/dropdown.png" class="dropdown-icon mx-1" alt="dropdown-icon">
+                </div>
+            </header>
+            <!-- Ends: Header -->
+            <!-- Content-body -->
+            <main id="content-body" class="d-flex  overflow-auto h-100 w-100 ">
+                <div
+                    class="container-fluid d-flex align-items-center justify-content-center rounded-lg bg-white w-100 h-100">
+                    <h2>Dashboard Work in progress</h2>
+                </div>
+            </main>
+            <!-- Ends: Content-body -->
+        </div>
+        <!-- Ends: Content-wrapper -->
+    </div>
+    <!-- Ends: Main-wrapper -->
+
+    <!-- Link to Javascript -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

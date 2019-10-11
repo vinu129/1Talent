@@ -1,0 +1,12 @@
+// global properties
+html,body{
+  width: 100%;
+  height: 100%;
+  font-family: $font-family-base;
+}
+#content-wrapper{
+  background-color: lighten($primary,7%);
+}
+input[type="checkbox"]{
+  display: none;
+}
