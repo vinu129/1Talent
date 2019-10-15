@@ -21,33 +21,33 @@
     <!-- Main-wrapper -->
     <div id="main-wrapper" class="d-flex h-100 w-100 overflow-hidden position-relative">
         <input type="checkbox" name="toggler" id="nav-toggler">
-        <input type="checkbox" name="close-nav" id="close-nav">
+     
         <!-- Side-nav -->
-        <aside id="side-nav" class="d-flex bg-primary flex-column flex-shrink-0 overflow-auto h-100">
+        <aside id="side-nav" class="d-flex bg-primary flex-column flex-shrink-0  h-100">
             <div class="nav-header w-100 d-flex align-items-center justify-content-center position-relative">
-                <img src="./assets/images/icons/logo.png" alt="1rivet-logo" class="logo-image img-sm">
+                <img src="./assets/images/icons/logo.png" alt="1rivet-logo" class="logo-image img-sm" id="logo-image">
                 <img src="./assets/images/icons/white-logo.png" alt="1rivet-logo" class="logo-image img-big">
-               
-                <label for="close-nav"> <span class="close-icon fa fa-times text-white position-absolute  d-md-block d-lg-none"></span></label>
+                <label for="nav-toggler"> <span
+                        class="close-icon fa fa-times text-white position-absolute  d-md-block d-lg-none"></span></label>
             </div>
-            <nav class="nav flex-column pt-4">
+            <nav class="nav flex-nowrap flex-column pt-4 ">
                 <a class="nav-link navlink active d-flex  py-4 mb-1" href="#">
                     <div class="nav-link-icon">
                         <img src="./assets/images/icons/dashboard_home.png" alt="Dashboard">
                     </div>
-                    <div id="nav-link-title" class="nav-link-title">Dashboard</div>
+                    <div id="nav-link-title" class="nav-link-title ">Dashboard</div>
                 </a>
                 <a class="nav-link navlink d-flex  py-4 mb-1" href="#">
                     <div class="nav-link-icon">
                         <img src="./assets/images/icons/help.png" alt="Resignation">
                     </div>
-                    <div id="nav-link-title" class="nav-link-title">Resignation</div>
+                    <div id="nav-link-title" class="nav-link-title ">Resignation</div>
                 </a>
                 <a class="nav-link navlink d-flex  py-4 mb-1" href="#">
                     <div class="nav-link-icon">
                         <img src="./assets/images/icons/settings.png" alt="Setting">
                     </div>
-                    <div id="nav-link-title" class="nav-link-title">Setting</div>
+                    <div id="nav-link-title" class="nav-link-title ">Setting</div>
                 </a>
 
             </nav>
@@ -57,9 +57,10 @@
         <div id="content-wrapper" class="d-flex flex-column w-100 h-100 px-4 pb-4">
             <!-- Header -->
             <header id="header" class="d-flex align-items-center  w-100 ">
-                <label for="nav-toggler" class="toggle-label mb-0"><span class="fa fa-bars fa-lg text-white mr-3"></span></label>
+                <label for="nav-toggler" class="toggle-label mb-0"><span
+                        class="fa fa-bars fa-lg text-white mr-3 "></span></label>
                 <div class="title text-white position-relative">Employee Dashboard</div>
-                <div class="user-info d-flex align-items-center ml-auto">
+                <div class="user-info align-items-center ml-auto d-none d-md-flex">
                     <div class="position-relative mx-4">
                         <img src="./assets/images/icons/mail.png" class="mail-icon" alt="Mail icon">
                         <span class="custom-badge badge badge-secondary rounded-circle position-absolute">6</span>
@@ -75,7 +76,7 @@
             <main id="content-body" class="d-flex  overflow-auto h-100 w-100 ">
                 <div
                     class="container-fluid d-flex align-items-center justify-content-center rounded-lg bg-white w-100 h-100">
-                    <h2>Dashboard Work in progress</h2>
+                    <h2 class="text-center">Dashboard Work in progress</h2>
                 </div>
             </main>
             <!-- Ends: Content-body -->
@@ -84,8 +85,7 @@
     </div>
     <!-- Ends: Main-wrapper -->
 
-    <!-- Link to Javascript -->
-    <script src="./assets/js/main.js"></script>
+
 </body>
 
 </html>

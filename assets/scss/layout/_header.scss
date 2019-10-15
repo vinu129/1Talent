@@ -4,6 +4,9 @@
     font-size: 1.25rem;
     font-weight: 500;
     width: 50%;
+     @include media-query(md) {
+         width: 100%;
+        }
     z-index: 5;
     &::before {
       content: "Employee Dashboard";
@@ -15,6 +18,8 @@
       bottom: -18px;
       z-index: -1;
       opacity: 0.1;
+      @include media-query(md) {}
+      display: none;
     }
   }
   .custom-badge {
@@ -34,5 +39,6 @@
   }
   .toggle-label{
     cursor: pointer;
+   
   }
 }
